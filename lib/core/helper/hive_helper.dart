@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:amarislam/models/bookmark_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../model/app_settings.dart';
@@ -12,15 +13,20 @@ class HiveHelper {
 
   late Box<QrHistoryItem> _historyBox;
   late Box<AppSettings> _settingsBox;
+  late Box<Bookmark> _bookmarkBox;
+  late Box _miscBox;
 
   Future<void> init() async {
     await Hive.initFlutter();
 
     Hive.registerAdapter(QrHistoryItemAdapter());
     Hive.registerAdapter(AppSettingsAdapter());
+    Hive.registerAdapter(BookmarkAdapter());
 
     _historyBox = await Hive.openBox<QrHistoryItem>('historyBox');
     _settingsBox = await Hive.openBox<AppSettings>('settingsBox');
+    _bookmarkBox = await Hive.openBox<Bookmark>('bookmarkBox');
+    _miscBox = await Hive.openBox('miscBox');
 
     // Initialize default settings if empty
     if (_settingsBox.isEmpty) {
@@ -80,6 +86,39 @@ class HiveHelper {
 
   bool get vibrateOnScan => getSettings().vibrateOnScan;
   bool get beepOnScan => getSettings().beepOnScan;
+
+  // ==================== BOOKMARKS ====================
+
+  Future<void> addBookmark(Bookmark bookmark) async {
+    final key = "${bookmark.surahNumber}_${bookmark.ayahNumber}";
+    await _bookmarkBox.put(key, bookmark);
+  }
+
+  Future<void> removeBookmark(int surahNumber, int ayahNumber) async {
+    final key = "${surahNumber}_${ayahNumber}";
+    await _bookmarkBox.delete(key);
+  }
+
+  bool isBookmarked(int surahNumber, int ayahNumber) {
+    final key = "${surahNumber}_${ayahNumber}";
+    return _bookmarkBox.containsKey(key);
+  }
+
+  List<Bookmark> getAllBookmarks() {
+    return _bookmarkBox.values.toList()..sort((a, b) => b.timestamp.compareTo(a.timestamp));
+  }
+
+  Future<void> saveLastRead(int surahNumber, int ayahNumber) async {
+    await _miscBox.put('lastReadSurah', surahNumber);
+    await _miscBox.put('lastReadAyah', ayahNumber);
+  }
+
+  Map<String, int?> getLastRead() {
+    return {
+      'surah': _miscBox.get('lastReadSurah') as int?,
+      'ayah': _miscBox.get('lastReadAyah') as int?,
+    };
+  }
 
   // ==================== UTILS ====================
 

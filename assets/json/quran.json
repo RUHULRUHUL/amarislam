@@ -1,0 +1,108 @@
+[
+  {
+    "number": 1,
+    "ayahs": [
+      {
+        "number": 1,
+        "textArabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "textBangla": "পরম করুণাময় অতি দয়ালু আল্লাহর নামে।",
+        "textEnglish": "In the Name of Allah—the Most Compassionate, Most Merciful.",
+        "numberInSurah": 1,
+        "juz": 1
+      },
+      {
+        "number": 2,
+        "textArabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        "textBangla": "সমস্ত প্রশংসা আল্লাহর জন্য, যিনি সৃষ্টিকুলের রব।",
+        "textEnglish": "All praise is for Allah—Lord of all worlds",
+        "numberInSurah": 2,
+        "juz": 1
+      },
+      {
+        "number": 3,
+        "textArabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "textBangla": "দয়াময়, পরম দয়ালু, পরম করুণাময়, অতি দয়ালু।",
+        "textEnglish": "the Most Compassionate, Most Merciful",
+        "numberInSurah": 3,
+        "juz": 1
+      },
+      {
+        "number": 4,
+        "textArabic": "مَـٰلِكِ يَوْমِ ٱلدِّينِ",
+        "textBangla": "বিচার দিবসের মালিক।",
+        "textEnglish": "Master of the Day of Judgment.",
+        "numberInSurah": 4,
+        "juz": 1
+      },
+      {
+        "number": 5,
+        "textArabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        "textBangla": "আপনারই আমরা ইবাদাত করি এবং আপনারই নিকট আমরা সাহায্য চাই।",
+        "textEnglish": "You ˹alone˺ we worship and You ˹alone˺ we ask for help.",
+        "numberInSurah": 5,
+        "juz": 1
+      },
+      {
+        "number": 6,
+        "textArabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+        "textBangla": "আমাদেরকে সরল পথ দেখান। পথের হিদায়াত দিন।",
+        "textEnglish": "Guide us along the Straight Path",
+        "numberInSurah": 6,
+        "juz": 1
+      },
+      {
+        "number": 7,
+        "textArabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَগْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+        "textBangla": "তাদের পথ, যাদের উপর আপনি অনুগ্রহ করেছেন। যাদেরকে নিয়ামত দিয়েছেন।যাদের উপর (আপনার) ক্রোধ আপতিত হয়নি এবং যারা পথভ্রষ্টও নয়।",
+        "textEnglish": "the Path of those You have blessed—not those You are displeased with, or those who are astray.",
+        "numberInSurah": 7,
+        "juz": 1
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "ayahs": [
+      {
+        "number": 8,
+        "textArabic": "الٓمٓ",
+        "textBangla": "আলিফ, লাম, মীম।",
+        "textEnglish": "Alif, Lām, Meem.",
+        "numberInSurah": 1,
+        "juz": 1
+      },
+      {
+        "number": 9,
+        "textArabic": "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًۭى لِّلْمُتَّقِينَ",
+        "textBangla": "এটা ঐ (মহান) কিতাব যাতে কোন সন্দেহ নেই, মুত্তাকীদের জন্য পথ নির্দেশ।",
+        "textEnglish": "This is the Book about which there is no doubt, a guidance for those conscious of Allah -",
+        "numberInSurah": 2,
+        "juz": 1
+      },
+      {
+        "number": 10,
+        "textArabic": "ٱلَّذِينَ يُؤْمِنُونَ بِٱلْغَيْبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ",
+        "textBangla": "যারা গায়বের প্রতি ঈমান আনে, নামায কায়িম করে এবং আমি যে জীবনোপকরণ তাদেরকে দিয়েছি তা থেকে তারা ব্যয় করে।",
+        "textEnglish": "Who believe in the unseen, establish prayer, and spend out of what We have provided for them,",
+        "numberInSurah": 3,
+        "juz": 1
+      },
+      {
+        "number": 11,
+        "textArabic": "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْءَاخِرَةِ هُمْ يُوقِنُونَ",
+        "textBangla": "আর তোমার প্রতি যা নাযিল হয়েছে ও তোমার পূর্বে যা নাযিল হয়েছে তাতে তারা বিশ্বাস স্থাপন করে এবং পরকালের প্রতিও তারা নিশ্চিত বিশ্বাসী।",
+        "textEnglish": "And who believe in what has been revealed to you, [O Muhammad], and what was revealed before you, and of the Hereafter they are certain [in faith].",
+        "numberInSurah": 4,
+        "juz": 1
+      },
+      {
+        "number": 12,
+        "textArabic": "أُو۟لَـٰٓئِكَ عَلَىٰ هُدًۭى مِّن رَّبِّهِمْ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
+        "textBangla": "তারাই তাদের প্রতিপালকের হিদায়াতের উপর প্রতিষ্ঠিত আছে, আর তারাই সফলকাম।",
+        "textEnglish": "Those are upon [right] guidance from their Lord, and it is those who are the successful.",
+        "numberInSurah": 5,
+        "juz": 1
+      }
+    ]
+  }
+]

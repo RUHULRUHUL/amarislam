@@ -1,0 +1,1712 @@
+[
+  {
+    "number": 1,
+    "nameArabic": "الفاتحة",
+    "nameBangla": "আল-ফাতিহা",
+    "nameEnglish": "Al-Fatihah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 7,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফাতিহা",
+      "al-fatihah",
+      "al fatihah"
+    ]
+  },
+  {
+    "number": 2,
+    "nameArabic": "البقرة",
+    "nameBangla": "আল-বাকারা",
+    "nameEnglish": "Al-Baqarah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 286,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-বাকারা",
+      "al-baqarah",
+      "al baqarah"
+    ]
+  },
+  {
+    "number": 3,
+    "nameArabic": "آل عمران",
+    "nameBangla": "আলে ইমরান",
+    "nameEnglish": "Ali 'Imran",
+    "revelationType": "Madani",
+    "numberOfAyahs": 200,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আলে ইমরান",
+      "ali 'imran",
+      "ali 'imran"
+    ]
+  },
+  {
+    "number": 4,
+    "nameArabic": "النساء",
+    "nameBangla": "আন-নিসা",
+    "nameEnglish": "An-Nisa",
+    "revelationType": "Madani",
+    "numberOfAyahs": 176,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নিসা",
+      "an-nisa",
+      "an nisa"
+    ]
+  },
+  {
+    "number": 5,
+    "nameArabic": "المائدة",
+    "nameBangla": "আল-মায়িদাহ",
+    "nameEnglish": "Al-Ma'idah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 120,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মায়িদাহ",
+      "al-ma'idah",
+      "al ma'idah"
+    ]
+  },
+  {
+    "number": 6,
+    "nameArabic": "الأنعام",
+    "nameBangla": "আল-আনআম",
+    "nameEnglish": "Al-An'am",
+    "revelationType": "Makki",
+    "numberOfAyahs": 165,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আনআম",
+      "al-an'am",
+      "al an'am"
+    ]
+  },
+  {
+    "number": 7,
+    "nameArabic": "الأعراف",
+    "nameBangla": "আল-আ'রাফ",
+    "nameEnglish": "Al-A'raf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 206,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আ'রাফ",
+      "al-a'raf",
+      "al a'raf"
+    ]
+  },
+  {
+    "number": 8,
+    "nameArabic": "الأنفال",
+    "nameBangla": "আল-আনফাল",
+    "nameEnglish": "Al-Anfal",
+    "revelationType": "Madani",
+    "numberOfAyahs": 75,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আনফাল",
+      "al-anfal",
+      "al anfal"
+    ]
+  },
+  {
+    "number": 9,
+    "nameArabic": "التوبة",
+    "nameBangla": "আত-তাওবাহ",
+    "nameEnglish": "At-Tawbah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 129,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তাওবাহ",
+      "at-tawbah",
+      "at tawbah"
+    ]
+  },
+  {
+    "number": 10,
+    "nameArabic": "يونس",
+    "nameBangla": "ইউনুস",
+    "nameEnglish": "Yunus",
+    "revelationType": "Makki",
+    "numberOfAyahs": 109,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ইউনুস",
+      "yunus",
+      "yunus"
+    ]
+  },
+  {
+    "number": 11,
+    "nameArabic": "هود",
+    "nameBangla": "হুদ",
+    "nameEnglish": "Hud",
+    "revelationType": "Makki",
+    "numberOfAyahs": 123,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "হুদ",
+      "hud",
+      "hud"
+    ]
+  },
+  {
+    "number": 12,
+    "nameArabic": "يوسف",
+    "nameBangla": "ইউসুফ",
+    "nameEnglish": "Yusuf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 111,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ইউসুফ",
+      "yusuf",
+      "yusuf"
+    ]
+  },
+  {
+    "number": 13,
+    "nameArabic": "الرعد",
+    "nameBangla": "আর-রা'দ",
+    "nameEnglish": "Ar-Ra'd",
+    "revelationType": "Madani",
+    "numberOfAyahs": 43,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আর-রা'দ",
+      "ar-ra'd",
+      "ar ra'd"
+    ]
+  },
+  {
+    "number": 14,
+    "nameArabic": "إبراهيم",
+    "nameBangla": "ইবরাহিম",
+    "nameEnglish": "Ibrahim",
+    "revelationType": "Makki",
+    "numberOfAyahs": 52,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ইবরাহিম",
+      "ibrahim",
+      "ibrahim"
+    ]
+  },
+  {
+    "number": 15,
+    "nameArabic": "الحجر",
+    "nameBangla": "আল-হিজর",
+    "nameEnglish": "Al-Hijr",
+    "revelationType": "Makki",
+    "numberOfAyahs": 99,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হিজর",
+      "al-hijr",
+      "al hijr"
+    ]
+  },
+  {
+    "number": 16,
+    "nameArabic": "النحل",
+    "nameBangla": "আন-নাহল",
+    "nameEnglish": "An-Nahl",
+    "revelationType": "Makki",
+    "numberOfAyahs": 128,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাহল",
+      "an-nahl",
+      "an nahl"
+    ]
+  },
+  {
+    "number": 17,
+    "nameArabic": "الإسراء",
+    "nameBangla": "আল-ইসরা",
+    "nameEnglish": "Al-Isra",
+    "revelationType": "Makki",
+    "numberOfAyahs": 111,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ইসরা",
+      "al-isra",
+      "al isra"
+    ]
+  },
+  {
+    "number": 18,
+    "nameArabic": "الكهف",
+    "nameBangla": "আল-কাহফ",
+    "nameEnglish": "Al-Kahf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 110,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কাহফ",
+      "al-kahf",
+      "al kahf"
+    ]
+  },
+  {
+    "number": 19,
+    "nameArabic": "مريم",
+    "nameBangla": "মারইয়াম",
+    "nameEnglish": "Maryam",
+    "revelationType": "Makki",
+    "numberOfAyahs": 98,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "মারইয়াম",
+      "maryam",
+      "maryam"
+    ]
+  },
+  {
+    "number": 20,
+    "nameArabic": "طه",
+    "nameBangla": "ত্ব-হা",
+    "nameEnglish": "Ta-Ha",
+    "revelationType": "Makki",
+    "numberOfAyahs": 135,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ত্ব-হা",
+      "ta-ha",
+      "ta ha"
+    ]
+  },
+  {
+    "number": 21,
+    "nameArabic": "الأنبياء",
+    "nameBangla": "আল-আম্বিয়া",
+    "nameEnglish": "Al-Anbiya",
+    "revelationType": "Makki",
+    "numberOfAyahs": 112,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আম্বিয়া",
+      "al-anbiya",
+      "al anbiya"
+    ]
+  },
+  {
+    "number": 22,
+    "nameArabic": "الحج",
+    "nameBangla": "আল-হাজ্জ",
+    "nameEnglish": "Al-Hajj",
+    "revelationType": "Madani",
+    "numberOfAyahs": 78,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হাজ্জ",
+      "al-hajj",
+      "al hajj"
+    ]
+  },
+  {
+    "number": 23,
+    "nameArabic": "المؤمنون",
+    "nameBangla": "আল-মুমিনুন",
+    "nameEnglish": "Al-Mu'minun",
+    "revelationType": "Makki",
+    "numberOfAyahs": 118,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুমিনুন",
+      "al-mu'minun",
+      "al mu'minun"
+    ]
+  },
+  {
+    "number": 24,
+    "nameArabic": "النور",
+    "nameBangla": "আন-নূর",
+    "nameEnglish": "An-Nur",
+    "revelationType": "Madani",
+    "numberOfAyahs": 64,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নূর",
+      "an-nur",
+      "an nur"
+    ]
+  },
+  {
+    "number": 25,
+    "nameArabic": "الفرقان",
+    "nameBangla": "আল-ফুরকান",
+    "nameEnglish": "Al-Furqan",
+    "revelationType": "Makki",
+    "numberOfAyahs": 77,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফুরকান",
+      "al-furqan",
+      "al furqan"
+    ]
+  },
+  {
+    "number": 26,
+    "nameArabic": "الشعراء",
+    "nameBangla": "আশ-শু'আরা",
+    "nameEnglish": "Ash-Shu'ara",
+    "revelationType": "Makki",
+    "numberOfAyahs": 227,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আশ-শু'আরা",
+      "ash-shu'ara",
+      "ash shu'ara"
+    ]
+  },
+  {
+    "number": 27,
+    "nameArabic": "النمل",
+    "nameBangla": "আন-নামল",
+    "nameEnglish": "An-Naml",
+    "revelationType": "Makki",
+    "numberOfAyahs": 93,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নামল",
+      "an-naml",
+      "an naml"
+    ]
+  },
+  {
+    "number": 28,
+    "nameArabic": "القصص",
+    "nameBangla": "আল-কাসাস",
+    "nameEnglish": "Al-Qasas",
+    "revelationType": "Makki",
+    "numberOfAyahs": 88,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কাসাস",
+      "al-qasas",
+      "al qasas"
+    ]
+  },
+  {
+    "number": 29,
+    "nameArabic": "العنكبوت",
+    "nameBangla": "আল-আনকাবুত",
+    "nameEnglish": "Al-Ankabut",
+    "revelationType": "Makki",
+    "numberOfAyahs": 69,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আনকাবুত",
+      "al-ankabut",
+      "al ankabut"
+    ]
+  },
+  {
+    "number": 30,
+    "nameArabic": "الروم",
+    "nameBangla": "আর-রূম",
+    "nameEnglish": "Ar-Rum",
+    "revelationType": "Makki",
+    "numberOfAyahs": 60,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আর-রূম",
+      "ar-rum",
+      "ar rum"
+    ]
+  },
+  {
+    "number": 31,
+    "nameArabic": "لقمان",
+    "nameBangla": "লুকমান",
+    "nameEnglish": "Luqman",
+    "revelationType": "Makki",
+    "numberOfAyahs": 34,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "লুকমান",
+      "luqman",
+      "luqman"
+    ]
+  },
+  {
+    "number": 32,
+    "nameArabic": "السجدة",
+    "nameBangla": "আস-সাজদাহ",
+    "nameEnglish": "As-Sajdah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 30,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আস-সাজদাহ",
+      "as-sajdah",
+      "as sajdah"
+    ]
+  },
+  {
+    "number": 33,
+    "nameArabic": "الأحزاب",
+    "nameBangla": "আল-আহযাব",
+    "nameEnglish": "Al-Ahzab",
+    "revelationType": "Madani",
+    "numberOfAyahs": 73,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আহযাব",
+      "al-ahzab",
+      "al ahzab"
+    ]
+  },
+  {
+    "number": 34,
+    "nameArabic": "سبأ",
+    "nameBangla": "সাবা",
+    "nameEnglish": "Saba",
+    "revelationType": "Makki",
+    "numberOfAyahs": 54,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "সাবা",
+      "saba",
+      "saba"
+    ]
+  },
+  {
+    "number": 35,
+    "nameArabic": "فاطر",
+    "nameBangla": "ফাতির",
+    "nameEnglish": "Fatir",
+    "revelationType": "Makki",
+    "numberOfAyahs": 45,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ফাতির",
+      "fatir",
+      "fatir"
+    ]
+  },
+  {
+    "number": 36,
+    "nameArabic": "يس",
+    "nameBangla": "ইয়া-সীন",
+    "nameEnglish": "Ya-Sin",
+    "revelationType": "Makki",
+    "numberOfAyahs": 83,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ইয়া-সীন",
+      "ya-sin",
+      "ya sin"
+    ]
+  },
+  {
+    "number": 37,
+    "nameArabic": "الصافات",
+    "nameBangla": "আস-সাফফাত",
+    "nameEnglish": "As-Saffat",
+    "revelationType": "Makki",
+    "numberOfAyahs": 182,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আস-সাফফাত",
+      "as-saffat",
+      "as saffat"
+    ]
+  },
+  {
+    "number": 38,
+    "nameArabic": "ص",
+    "nameBangla": "সোয়াদ",
+    "nameEnglish": "Sad",
+    "revelationType": "Makki",
+    "numberOfAyahs": 88,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "সোয়াদ",
+      "sad",
+      "sad"
+    ]
+  },
+  {
+    "number": 39,
+    "nameArabic": "الزمر",
+    "nameBangla": "আয-যুমার",
+    "nameEnglish": "Az-Zumar",
+    "revelationType": "Makki",
+    "numberOfAyahs": 75,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আয-যুমার",
+      "az-zumar",
+      "az zumar"
+    ]
+  },
+  {
+    "number": 40,
+    "nameArabic": "غافر",
+    "nameBangla": "গাফির",
+    "nameEnglish": "Ghafir",
+    "revelationType": "Makki",
+    "numberOfAyahs": 85,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "গাফির",
+      "ghafir",
+      "ghafir"
+    ]
+  },
+  {
+    "number": 41,
+    "nameArabic": "فصلت",
+    "nameBangla": "ফুসসিলাত",
+    "nameEnglish": "Fussilat",
+    "revelationType": "Makki",
+    "numberOfAyahs": 54,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ফুসসিলাত",
+      "fussilat",
+      "fussilat"
+    ]
+  },
+  {
+    "number": 42,
+    "nameArabic": "الشورى",
+    "nameBangla": "আশ-শূরা",
+    "nameEnglish": "Ash-Shura",
+    "revelationType": "Makki",
+    "numberOfAyahs": 53,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আশ-শূরা",
+      "ash-shura",
+      "ash shura"
+    ]
+  },
+  {
+    "number": 43,
+    "nameArabic": "الزخرف",
+    "nameBangla": "আয-যুখরুফ",
+    "nameEnglish": "Az-Zukhruf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 89,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আয-যুখরুফ",
+      "az-zukhruf",
+      "az zukhruf"
+    ]
+  },
+  {
+    "number": 44,
+    "nameArabic": "الدخان",
+    "nameBangla": "আদ-দুখান",
+    "nameEnglish": "Ad-Dukhan",
+    "revelationType": "Makki",
+    "numberOfAyahs": 59,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আদ-দুখান",
+      "ad-dukhan",
+      "ad dukhan"
+    ]
+  },
+  {
+    "number": 45,
+    "nameArabic": "الجاثية",
+    "nameBangla": "আল-জাসিয়াহ",
+    "nameEnglish": "Al-Jathiyah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 37,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-জাসিয়াহ",
+      "al-jathiyah",
+      "al jathiyah"
+    ]
+  },
+  {
+    "number": 46,
+    "nameArabic": "الأحقاف",
+    "nameBangla": "আল-আহকাফ",
+    "nameEnglish": "Al-Ahqaf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 35,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আহকাফ",
+      "al-ahqaf",
+      "al ahqaf"
+    ]
+  },
+  {
+    "number": 47,
+    "nameArabic": "محمد",
+    "nameBangla": "মুহাম্মদ",
+    "nameEnglish": "Muhammad",
+    "revelationType": "Madani",
+    "numberOfAyahs": 38,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "মুহাম্মদ",
+      "muhammad",
+      "muhammad"
+    ]
+  },
+  {
+    "number": 48,
+    "nameArabic": "الفتح",
+    "nameBangla": "আল-ফাতহ",
+    "nameEnglish": "Al-Fath",
+    "revelationType": "Madani",
+    "numberOfAyahs": 29,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফাতহ",
+      "al-fath",
+      "al fath"
+    ]
+  },
+  {
+    "number": 49,
+    "nameArabic": "الحجرات",
+    "nameBangla": "আল-হুজুরাত",
+    "nameEnglish": "Al-Hujurat",
+    "revelationType": "Madani",
+    "numberOfAyahs": 18,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হুজুরাত",
+      "al-hujurat",
+      "al hujurat"
+    ]
+  },
+  {
+    "number": 50,
+    "nameArabic": "ق",
+    "nameBangla": "ক্বাফ",
+    "nameEnglish": "Qaf",
+    "revelationType": "Makki",
+    "numberOfAyahs": 45,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "ক্বাফ",
+      "qaf",
+      "qaf"
+    ]
+  },
+  {
+    "number": 51,
+    "nameArabic": "الذاريات",
+    "nameBangla": "আয-যারিয়াত",
+    "nameEnglish": "Adh-Dhariyat",
+    "revelationType": "Makki",
+    "numberOfAyahs": 60,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আয-যারিয়াত",
+      "adh-dhariyat",
+      "adh dhariyat"
+    ]
+  },
+  {
+    "number": 52,
+    "nameArabic": "الطور",
+    "nameBangla": "আত-তূর",
+    "nameEnglish": "At-Tur",
+    "revelationType": "Makki",
+    "numberOfAyahs": 49,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তূর",
+      "at-tur",
+      "at tur"
+    ]
+  },
+  {
+    "number": 53,
+    "nameArabic": "النجم",
+    "nameBangla": "আন-নাজম",
+    "nameEnglish": "An-Najm",
+    "revelationType": "Makki",
+    "numberOfAyahs": 62,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাজম",
+      "an-najm",
+      "an najm"
+    ]
+  },
+  {
+    "number": 54,
+    "nameArabic": "القمر",
+    "nameBangla": "আল-কামার",
+    "nameEnglish": "Al-Qamar",
+    "revelationType": "Makki",
+    "numberOfAyahs": 55,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কামার",
+      "al-qamar",
+      "al qamar"
+    ]
+  },
+  {
+    "number": 55,
+    "nameArabic": "الرحمن",
+    "nameBangla": "আর-রহমান",
+    "nameEnglish": "Ar-Rahman",
+    "revelationType": "Madani",
+    "numberOfAyahs": 78,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আর-রহমান",
+      "ar-rahman",
+      "ar rahman"
+    ]
+  },
+  {
+    "number": 56,
+    "nameArabic": "الواقعة",
+    "nameBangla": "আল-ওয়াকিয়াহ",
+    "nameEnglish": "Al-Waqi'ah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 96,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ওয়াকিয়াহ",
+      "al-waqi'ah",
+      "al waqi'ah"
+    ]
+  },
+  {
+    "number": 57,
+    "nameArabic": "الحديد",
+    "nameBangla": "আল-হাদিদ",
+    "nameEnglish": "Al-Hadid",
+    "revelationType": "Madani",
+    "numberOfAyahs": 29,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হাদিদ",
+      "al-hadid",
+      "al hadid"
+    ]
+  },
+  {
+    "number": 58,
+    "nameArabic": "المجادلة",
+    "nameBangla": "আল-মুজাদালাহ",
+    "nameEnglish": "Al-Mujadilah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 22,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুজাদালাহ",
+      "al-mujadilah",
+      "al mujadilah"
+    ]
+  },
+  {
+    "number": 59,
+    "nameArabic": "الحشر",
+    "nameBangla": "আল-হাশর",
+    "nameEnglish": "Al-Hashr",
+    "revelationType": "Madani",
+    "numberOfAyahs": 24,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হাশর",
+      "al-hashr",
+      "al hashr"
+    ]
+  },
+  {
+    "number": 60,
+    "nameArabic": "الممتحنة",
+    "nameBangla": "আল-মুমতাহিনাহ",
+    "nameEnglish": "Al-Mumtahanah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 13,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুমতাহিনাহ",
+      "al-mumtahanah",
+      "al mumtahanah"
+    ]
+  },
+  {
+    "number": 61,
+    "nameArabic": "الصف",
+    "nameBangla": "আস-সাফ",
+    "nameEnglish": "As-Saff",
+    "revelationType": "Madani",
+    "numberOfAyahs": 14,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আস-সাফ",
+      "as-saff",
+      "as saff"
+    ]
+  },
+  {
+    "number": 62,
+    "nameArabic": "الجمعة",
+    "nameBangla": "আল-জুমুআহ",
+    "nameEnglish": "Al-Jumu'ah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 11,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-জুমুআহ",
+      "al-jumu'ah",
+      "al jumu'ah"
+    ]
+  },
+  {
+    "number": 63,
+    "nameArabic": "المنافقون",
+    "nameBangla": "আল-মুনাফিকুন",
+    "nameEnglish": "Al-Munafiqun",
+    "revelationType": "Madani",
+    "numberOfAyahs": 11,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুনাফিকুন",
+      "al-munafiqun",
+      "al munafiqun"
+    ]
+  },
+  {
+    "number": 64,
+    "nameArabic": "التغابن",
+    "nameBangla": "আত-তাগাবুন",
+    "nameEnglish": "At-Taghabun",
+    "revelationType": "Madani",
+    "numberOfAyahs": 18,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তাগাবুন",
+      "at-taghabun",
+      "at taghabun"
+    ]
+  },
+  {
+    "number": 65,
+    "nameArabic": "الطلاق",
+    "nameBangla": "আত-তালাক",
+    "nameEnglish": "At-Talaq",
+    "revelationType": "Madani",
+    "numberOfAyahs": 12,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তালাক",
+      "at-talaq",
+      "at talaq"
+    ]
+  },
+  {
+    "number": 66,
+    "nameArabic": "التحريم",
+    "nameBangla": "আত-তাহরিম",
+    "nameEnglish": "At-Tahrim",
+    "revelationType": "Madani",
+    "numberOfAyahs": 12,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তাহরিম",
+      "at-tahrim",
+      "at tahrim"
+    ]
+  },
+  {
+    "number": 67,
+    "nameArabic": "الملك",
+    "nameBangla": "আল-মুলক",
+    "nameEnglish": "Al-Mulk",
+    "revelationType": "Makki",
+    "numberOfAyahs": 30,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুলক",
+      "al-mulk",
+      "al mulk"
+    ]
+  },
+  {
+    "number": 68,
+    "nameArabic": "القلم",
+    "nameBangla": "আল-কলম",
+    "nameEnglish": "Al-Qalam",
+    "revelationType": "Makki",
+    "numberOfAyahs": 52,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কলম",
+      "al-qalam",
+      "al qalam"
+    ]
+  },
+  {
+    "number": 69,
+    "nameArabic": "الحاقة",
+    "nameBangla": "আল-হাক্কাহ",
+    "nameEnglish": "Al-Haqqah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 52,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হাক্কাহ",
+      "al-haqqah",
+      "al haqqah"
+    ]
+  },
+  {
+    "number": 70,
+    "nameArabic": "المعارج",
+    "nameBangla": "আল-মা'আরিজ",
+    "nameEnglish": "Al-Ma'arij",
+    "revelationType": "Makki",
+    "numberOfAyahs": 44,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মা'আরিজ",
+      "al-ma'arij",
+      "al ma'arij"
+    ]
+  },
+  {
+    "number": 71,
+    "nameArabic": "نوح",
+    "nameBangla": "নূহ",
+    "nameEnglish": "Nuh",
+    "revelationType": "Makki",
+    "numberOfAyahs": 28,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "নূহ",
+      "nuh",
+      "nuh"
+    ]
+  },
+  {
+    "number": 72,
+    "nameArabic": "الجن",
+    "nameBangla": "আল-জিন",
+    "nameEnglish": "Al-Jinn",
+    "revelationType": "Makki",
+    "numberOfAyahs": 28,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-জিন",
+      "al-jinn",
+      "al jinn"
+    ]
+  },
+  {
+    "number": 73,
+    "nameArabic": "المزمل",
+    "nameBangla": "আল-মুযযাম্মিল",
+    "nameEnglish": "Al-Muzzammil",
+    "revelationType": "Makki",
+    "numberOfAyahs": 20,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুযযাম্মিল",
+      "al-muzzammil",
+      "al muzzammil"
+    ]
+  },
+  {
+    "number": 74,
+    "nameArabic": "المدثر",
+    "nameBangla": "আল-মুদ্দাসসির",
+    "nameEnglish": "Al-Muddaththir",
+    "revelationType": "Makki",
+    "numberOfAyahs": 56,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুদ্দাসসির",
+      "al-muddaththir",
+      "al muddaththir"
+    ]
+  },
+  {
+    "number": 75,
+    "nameArabic": "القيامة",
+    "nameBangla": "আল-কিয়ামাহ",
+    "nameEnglish": "Al-Qiyamah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 40,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কিয়ামাহ",
+      "al-qiyamah",
+      "al qiyamah"
+    ]
+  },
+  {
+    "number": 76,
+    "nameArabic": "الإنسان",
+    "nameBangla": "আল-ইনসান",
+    "nameEnglish": "Al-Insan",
+    "revelationType": "Madani",
+    "numberOfAyahs": 31,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ইনসান",
+      "al-insan",
+      "al insan"
+    ]
+  },
+  {
+    "number": 77,
+    "nameArabic": "المرسلات",
+    "nameBangla": "আল-মুরসালাত",
+    "nameEnglish": "Al-Mursalat",
+    "revelationType": "Makki",
+    "numberOfAyahs": 50,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুরসালাত",
+      "al-mursalat",
+      "al mursalat"
+    ]
+  },
+  {
+    "number": 78,
+    "nameArabic": "النبأ",
+    "nameBangla": "আন-নাবা",
+    "nameEnglish": "An-Naba",
+    "revelationType": "Makki",
+    "numberOfAyahs": 40,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাবা",
+      "an-naba",
+      "an naba"
+    ]
+  },
+  {
+    "number": 79,
+    "nameArabic": "النازعات",
+    "nameBangla": "আন-নাযিআত",
+    "nameEnglish": "An-Nazi'at",
+    "revelationType": "Makki",
+    "numberOfAyahs": 46,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাযিআত",
+      "an-nazi'at",
+      "an nazi'at"
+    ]
+  },
+  {
+    "number": 80,
+    "nameArabic": "عبس",
+    "nameBangla": "আবাসা",
+    "nameEnglish": "Abasa",
+    "revelationType": "Makki",
+    "numberOfAyahs": 42,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আবাসা",
+      "abasa",
+      "abasa"
+    ]
+  },
+  {
+    "number": 81,
+    "nameArabic": "التكوير",
+    "nameBangla": "আত-তাকভির",
+    "nameEnglish": "At-Takwir",
+    "revelationType": "Makki",
+    "numberOfAyahs": 29,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তাকভির",
+      "at-takwir",
+      "at takwir"
+    ]
+  },
+  {
+    "number": 82,
+    "nameArabic": "الانفطار",
+    "nameBangla": "আল-ইনফিতার",
+    "nameEnglish": "Al-Infitar",
+    "revelationType": "Makki",
+    "numberOfAyahs": 19,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ইনফিতার",
+      "al-infitar",
+      "al infitar"
+    ]
+  },
+  {
+    "number": 83,
+    "nameArabic": "المطففين",
+    "nameBangla": "আল-মুতাফফিফিন",
+    "nameEnglish": "Al-Mutaffifin",
+    "revelationType": "Makki",
+    "numberOfAyahs": 36,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মুতাফফিফিন",
+      "al-mutaffifin",
+      "al mutaffifin"
+    ]
+  },
+  {
+    "number": 84,
+    "nameArabic": "الانشقاق",
+    "nameBangla": "আল-ইনশিকাক",
+    "nameEnglish": "Al-Inshiqaq",
+    "revelationType": "Makki",
+    "numberOfAyahs": 25,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ইনশিকাক",
+      "al-inshiqaq",
+      "al inshiqaq"
+    ]
+  },
+  {
+    "number": 85,
+    "nameArabic": "البروج",
+    "nameBangla": "আল-বুরুজ",
+    "nameEnglish": "Al-Buruj",
+    "revelationType": "Makki",
+    "numberOfAyahs": 22,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-বুরুজ",
+      "al-buruj",
+      "al buruj"
+    ]
+  },
+  {
+    "number": 86,
+    "nameArabic": "الطارق",
+    "nameBangla": "আত-তারিক",
+    "nameEnglish": "At-Tariq",
+    "revelationType": "Makki",
+    "numberOfAyahs": 17,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তারিক",
+      "at-tariq",
+      "at tariq"
+    ]
+  },
+  {
+    "number": 87,
+    "nameArabic": "الأعلى",
+    "nameBangla": "আল-আ'লা",
+    "nameEnglish": "Al-A'la",
+    "revelationType": "Makki",
+    "numberOfAyahs": 19,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আ'লা",
+      "al-a'la",
+      "al a'la"
+    ]
+  },
+  {
+    "number": 88,
+    "nameArabic": "الغاشية",
+    "nameBangla": "আল-গাশিয়াহ",
+    "nameEnglish": "Al-Ghashiyah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 26,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-গাশিয়াহ",
+      "al-ghashiyah",
+      "al ghashiyah"
+    ]
+  },
+  {
+    "number": 89,
+    "nameArabic": "الفجر",
+    "nameBangla": "আল-ফজর",
+    "nameEnglish": "Al-Fajr",
+    "revelationType": "Makki",
+    "numberOfAyahs": 30,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফজর",
+      "al-fajr",
+      "al fajr"
+    ]
+  },
+  {
+    "number": 90,
+    "nameArabic": "البلد",
+    "nameBangla": "আল-বালাদ",
+    "nameEnglish": "Al-Balad",
+    "revelationType": "Makki",
+    "numberOfAyahs": 20,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-বালাদ",
+      "al-balad",
+      "al balad"
+    ]
+  },
+  {
+    "number": 91,
+    "nameArabic": "الشمس",
+    "nameBangla": "আশ-শামস",
+    "nameEnglish": "Ash-Shams",
+    "revelationType": "Makki",
+    "numberOfAyahs": 15,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আশ-শামস",
+      "ash-shams",
+      "ash shams"
+    ]
+  },
+  {
+    "number": 92,
+    "nameArabic": "الليل",
+    "nameBangla": "আল-লাইল",
+    "nameEnglish": "Al-Layl",
+    "revelationType": "Makki",
+    "numberOfAyahs": 21,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-লাইল",
+      "al-layl",
+      "al layl"
+    ]
+  },
+  {
+    "number": 93,
+    "nameArabic": "الضحى",
+    "nameBangla": "আদ-দুহা",
+    "nameEnglish": "Ad-Duha",
+    "revelationType": "Makki",
+    "numberOfAyahs": 11,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আদ-দুহা",
+      "ad-duha",
+      "ad duha"
+    ]
+  },
+  {
+    "number": 94,
+    "nameArabic": "الشرح",
+    "nameBangla": "আশ-শারহ",
+    "nameEnglish": "Ash-Sharh",
+    "revelationType": "Makki",
+    "numberOfAyahs": 8,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আশ-শারহ",
+      "ash-sharh",
+      "ash sharh"
+    ]
+  },
+  {
+    "number": 95,
+    "nameArabic": "التين",
+    "nameBangla": "আত-তিন",
+    "nameEnglish": "At-Tin",
+    "revelationType": "Makki",
+    "numberOfAyahs": 8,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তিন",
+      "at-tin",
+      "at tin"
+    ]
+  },
+  {
+    "number": 96,
+    "nameArabic": "العلق",
+    "nameBangla": "আল-আলাক",
+    "nameEnglish": "Al-Alaq",
+    "revelationType": "Makki",
+    "numberOfAyahs": 19,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আলাক",
+      "al-alaq",
+      "al alaq"
+    ]
+  },
+  {
+    "number": 97,
+    "nameArabic": "القدر",
+    "nameBangla": "আল-কদর",
+    "nameEnglish": "Al-Qadr",
+    "revelationType": "Makki",
+    "numberOfAyahs": 5,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কদর",
+      "al-qadr",
+      "al qadr"
+    ]
+  },
+  {
+    "number": 98,
+    "nameArabic": "البينة",
+    "nameBangla": "আল-বাইয়্যিনাহ",
+    "nameEnglish": "Al-Bayyinah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 8,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-বাইয়্যিনাহ",
+      "al-bayyinah",
+      "al bayyinah"
+    ]
+  },
+  {
+    "number": 99,
+    "nameArabic": "الزلزلة",
+    "nameBangla": "আয-যিলযাল",
+    "nameEnglish": "Az-Zalzalah",
+    "revelationType": "Madani",
+    "numberOfAyahs": 8,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আয-যিলযাল",
+      "az-zalzalah",
+      "az zalzalah"
+    ]
+  },
+  {
+    "number": 100,
+    "nameArabic": "العاديات",
+    "nameBangla": "আল-আদিয়াত",
+    "nameEnglish": "Al-Adiyat",
+    "revelationType": "Makki",
+    "numberOfAyahs": 11,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আদিয়াত",
+      "al-adiyat",
+      "al adiyat"
+    ]
+  },
+  {
+    "number": 101,
+    "nameArabic": "القارعة",
+    "nameBangla": "আল-কারিআহ",
+    "nameEnglish": "Al-Qari'ah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 11,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কারিআহ",
+      "al-qari'ah",
+      "al qari'ah"
+    ]
+  },
+  {
+    "number": 102,
+    "nameArabic": "التكاثر",
+    "nameBangla": "আত-তাকাসুর",
+    "nameEnglish": "At-Takathur",
+    "revelationType": "Makki",
+    "numberOfAyahs": 8,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আত-তাকাসুর",
+      "at-takathur",
+      "at takathur"
+    ]
+  },
+  {
+    "number": 103,
+    "nameArabic": "العصر",
+    "nameBangla": "আল-আসর",
+    "nameEnglish": "Al-Asr",
+    "revelationType": "Makki",
+    "numberOfAyahs": 3,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-আসর",
+      "al-asr",
+      "al asr"
+    ]
+  },
+  {
+    "number": 104,
+    "nameArabic": "الهمزة",
+    "nameBangla": "আল-হুমাযাহ",
+    "nameEnglish": "Al-Humazah",
+    "revelationType": "Makki",
+    "numberOfAyahs": 9,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-হুমাযাহ",
+      "al-humazah",
+      "al humazah"
+    ]
+  },
+  {
+    "number": 105,
+    "nameArabic": "الفيل",
+    "nameBangla": "আল-ফিল",
+    "nameEnglish": "Al-Fil",
+    "revelationType": "Makki",
+    "numberOfAyahs": 5,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফিল",
+      "al-fil",
+      "al fil"
+    ]
+  },
+  {
+    "number": 106,
+    "nameArabic": "قريش",
+    "nameBangla": "কুরাইশ",
+    "nameEnglish": "Quraysh",
+    "revelationType": "Makki",
+    "numberOfAyahs": 4,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "কুরাইশ",
+      "quraysh",
+      "quraysh"
+    ]
+  },
+  {
+    "number": 107,
+    "nameArabic": "الماعون",
+    "nameBangla": "আল-মাউন",
+    "nameEnglish": "Al-Ma'un",
+    "revelationType": "Makki",
+    "numberOfAyahs": 7,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মাউন",
+      "al-ma'un",
+      "al ma'un"
+    ]
+  },
+  {
+    "number": 108,
+    "nameArabic": "الكوثر",
+    "nameBangla": "আল-কাওসার",
+    "nameEnglish": "Al-Kawthar",
+    "revelationType": "Makki",
+    "numberOfAyahs": 3,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কাওসার",
+      "al-kawthar",
+      "al kawthar"
+    ]
+  },
+  {
+    "number": 109,
+    "nameArabic": "الكافرون",
+    "nameBangla": "আল-কাফিরুন",
+    "nameEnglish": "Al-Kafirun",
+    "revelationType": "Makki",
+    "numberOfAyahs": 6,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-কাফিরুন",
+      "al-kafirun",
+      "al kafirun"
+    ]
+  },
+  {
+    "number": 110,
+    "nameArabic": "النصر",
+    "nameBangla": "আন-নাসর",
+    "nameEnglish": "An-Nasr",
+    "revelationType": "Madani",
+    "numberOfAyahs": 3,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাসর",
+      "an-nasr",
+      "an nasr"
+    ]
+  },
+  {
+    "number": 111,
+    "nameArabic": "المسد",
+    "nameBangla": "আল-মাসাদ",
+    "nameEnglish": "Al-Masad",
+    "revelationType": "Makki",
+    "numberOfAyahs": 5,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-মাসাদ",
+      "al-masad",
+      "al masad"
+    ]
+  },
+  {
+    "number": 112,
+    "nameArabic": "الإخلاص",
+    "nameBangla": "আল-ইখলাস",
+    "nameEnglish": "Al-Ikhlas",
+    "revelationType": "Makki",
+    "numberOfAyahs": 4,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ইখলাস",
+      "al-ikhlas",
+      "al ikhlas"
+    ]
+  },
+  {
+    "number": 113,
+    "nameArabic": "الفلق",
+    "nameBangla": "আল-ফালাক",
+    "nameEnglish": "Al-Falaq",
+    "revelationType": "Makki",
+    "numberOfAyahs": 5,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আল-ফালাক",
+      "al-falaq",
+      "al falaq"
+    ]
+  },
+  {
+    "number": 114,
+    "nameArabic": "الناس",
+    "nameBangla": "আন-নাস",
+    "nameEnglish": "An-Nas",
+    "revelationType": "Makki",
+    "numberOfAyahs": 6,
+    "numberOfRukus": null,
+    "startPage": null,
+    "searchKeywords": [
+      "আন-নাস",
+      "an-nas",
+      "an nas"
+    ]
+  }
+]
