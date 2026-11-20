@@ -14,6 +14,7 @@ class SurahDetailsController extends GetxController {
   final AudioPlayer audioPlayer = AudioPlayer();
   final RxBool isPlaying = false.obs;
   final RxnInt currentSurahNumber = RxnInt();
+  ConcatenatingAudioSource? _playlist;
 
   @override
   void onInit() {
@@ -21,10 +22,41 @@ class SurahDetailsController extends GetxController {
     // Listen for player state changes
     audioPlayer.playerStateStream.listen((state) {
       isPlaying.value = state.playing;
+      debugPrint("SurahDetailsController: PlayerState: playing=${state.playing}, state=${state.processingState}");
       
-      // Auto play next ayah when finished
       if (state.processingState == ProcessingState.completed) {
-        playNextAyah();
+        isPlaying.value = false;
+        playingAyahIndex.value = null;
+        playingAyahIndex.refresh();
+      }
+    });
+
+    // Listen for index changes to highlight the correct ayah
+    audioPlayer.currentIndexStream.listen((index) {
+      if (index != null) {
+        debugPrint("SurahDetailsController: Current index changed to $index");
+        
+        // Update the playing index and force UI refresh
+        playingAyahIndex.value = index;
+        playingAyahIndex.refresh();
+        
+        // Save last read if valid - wrapped in try-catch to prevent stream interruption
+        try {
+          if (currentSurahNumber.value != null && ayahs.isNotEmpty && index < ayahs.length) {
+            HiveHelper().saveLastRead(currentSurahNumber.value!, ayahs[index].numberInSurah);
+          }
+        } catch (e) {
+          debugPrint("Error saving last read: $e");
+        }
+      }
+    });
+
+    // Also sync with sequence state for additional reliability
+    audioPlayer.sequenceStateStream.listen((state) {
+      if (state != null && state.currentIndex != playingAyahIndex.value) {
+        debugPrint("SurahDetailsController: Syncing index from sequence state: ${state.currentIndex}");
+        playingAyahIndex.value = state.currentIndex;
+        playingAyahIndex.refresh();
       }
     });
   }
@@ -38,6 +70,16 @@ class SurahDetailsController extends GetxController {
   Future<void> loadAyahs(int surahNumber) async {
     try {
       isLoading.value = true;
+      // Stop any existing playback when loading new surah
+      if (audioPlayer.playing) {
+        await audioPlayer.stop();
+      }
+      
+      // Reset playing index when loading new Surah
+      playingAyahIndex.value = null;
+      _playlist = null;
+      currentSurahNumber.value = surahNumber;
+
       final String response = await rootBundle.loadString('assets/json/quran.json');
       if (response.isNotEmpty) {
         final List<dynamic> data = json.decode(response);
@@ -46,7 +88,7 @@ class SurahDetailsController extends GetxController {
           orElse: () => null,
         );
         if (surahData != null && surahData['ayahs'] != null) {
-          ayahs.value = (surahData['ayahs'] as List).map((a) => Ayah.fromJson(a)).toList();
+          ayahs.assignAll((surahData['ayahs'] as List).map((a) => Ayah.fromJson(a)).toList());
         } else {
           ayahs.clear();
         }
@@ -61,61 +103,53 @@ class SurahDetailsController extends GetxController {
     }
   }
 
-  Future<void> playNextAyah() async {
-    if (playingAyahIndex.value != null && playingAyahIndex.value! < ayahs.length - 1) {
-      playAyah(playingAyahIndex.value! + 1, currentSurahNumber.value!);
-    } else {
-      playingAyahIndex.value = null;
-      isPlaying.value = false;
-    }
-  }
-
   Future<void> stopAudio() async {
     await audioPlayer.stop();
     playingAyahIndex.value = null;
     isPlaying.value = false;
+    _playlist = null;
   }
 
   Future<void> togglePlayPause() async {
     if (audioPlayer.playing) {
       await audioPlayer.pause();
     } else {
-      await audioPlayer.play();
+      if ((audioPlayer.processingState == ProcessingState.idle || audioPlayer.processingState == ProcessingState.completed) && ayahs.isNotEmpty) {
+        playAyah(0, currentSurahNumber.value ?? 0);
+      } else {
+        await audioPlayer.play();
+      }
     }
   }
 
   Future<void> playAyah(int index, int surahNumber) async {
     try {
-      currentSurahNumber.value = surahNumber;
+      debugPrint("SurahDetailsController: playAyah(index: $index, surah: $surahNumber)");
       
-      if (playingAyahIndex.value == index && audioPlayer.playing) {
-        await audioPlayer.pause();
-        return;
+      // If surah changed or playlist not initialized
+      if (currentSurahNumber.value != surahNumber || _playlist == null) {
+        currentSurahNumber.value = surahNumber;
+        
+        _playlist = ConcatenatingAudioSource(
+          useLazyPreparation: true,
+          children: ayahs.map((ayah) => AudioSource.uri(
+            Uri.parse("https://cdn.islamic.network/quran/audio/128/ar.alafasy/${ayah.number}.mp3"),
+            tag: ayah,
+          )).toList(),
+        );
+        
+        await audioPlayer.setAudioSource(_playlist!);
       }
 
-      if (playingAyahIndex.value == index && !audioPlayer.playing && audioPlayer.processingState != ProcessingState.idle) {
-        await audioPlayer.play();
-        return;
-      }
-
-      final ayah = ayahs[index];
-      final audioUrl = "https://cdn.islamic.network/quran/audio/128/ar.alafasy/${ayah.number}.mp3";
-      
+      // Update index immediately for UI feedback
       playingAyahIndex.value = index;
 
-      await audioPlayer.setUrl(audioUrl);
+      await audioPlayer.seek(Duration.zero, index: index);
       audioPlayer.play();
-
-      // Save last read when playing
-      HiveHelper().saveLastRead(surahNumber, ayah.numberInSurah);
+      
     } catch (e) {
       debugPrint("Error playing audio: $e");
-      playingAyahIndex.value = null;
-      Get.snackbar(
-        "Error",
-        "Error playing audio. Please check your internet connection.",
-        snackPosition: SnackPosition.BOTTOM,
-      );
+      Get.snackbar("Error", "Error playing audio. Please check your connection.");
     }
   }
 
