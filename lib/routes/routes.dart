@@ -1,3 +1,4 @@
+import 'package:amarislam/view/qibla/QiblaScreen.dart';
 import 'package:amarislam/view/BottomNavScreen.dart';
 import 'package:amarislam/view/SettingsScreen.dart';
 import 'package:amarislam/view/onboard/onboardscreen.dart';
@@ -15,6 +16,7 @@ class Routes {
   static const String bottomNavScreen = "/bottomNavScreen";
   static const String settingScreen = "/settingScreen";
   static const String qrCodeGeneratorScreen = "/qrCodeGeneratorScreen";
+  static const String qiblaScreen = "/qiblaScreen";
 
   static List<GetPage> pages = [
     GetPage(name: splashScreen, page: () => const SplashScreen()),
@@ -23,6 +25,7 @@ class Routes {
     GetPage(name: nameSetScreen, page: () => const EnterNameScreen()),
     GetPage(name: profileSetScreen, page: () => const ProfileScreen()),
     GetPage(name: settingScreen, page: () => const SettingsScreen()),
+    GetPage(name: qiblaScreen, page: () => const QiblaScreen()),
     // GetPage(name: qrCodeGeneratorScreen, page: () => const QrCodeGeneratorScreen()),
   ];
 }

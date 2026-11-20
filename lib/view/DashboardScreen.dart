@@ -336,7 +336,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
           return InkWell(
             borderRadius: BorderRadius.circular(20),
             onTap: () {
-              // controller.openCategory(category);
+              if (category.route.isNotEmpty) {
+                Get.toNamed(category.route);
+              }
             },
             child: Container(
               padding: const EdgeInsets.all(8),

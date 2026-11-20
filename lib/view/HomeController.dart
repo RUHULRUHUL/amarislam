@@ -165,7 +165,7 @@ class HomeController extends GetxController {
           title: 'Qibla',
           subtitle: 'Find Qibla direction',
           icon: Icons.explore_rounded,
-          route: '/qibla',
+          route: '/qiblaScreen',
         ),
         const IslamicCategoryModel(
           id: 5,
