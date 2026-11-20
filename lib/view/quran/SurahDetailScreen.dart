@@ -34,31 +34,39 @@ class _SurahDetailScreenState extends State<SurahDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Obx(() => CustomScrollView(
-            slivers: [
-              _buildAppBar(),
-              if (controller.isLoading.value)
-                const SliverFillRemaining(
-                  child: Center(child: CircularProgressIndicator(color: AppColor.primary)),
-                )
-              else if (controller.ayahs.isEmpty)
-                SliverFillRemaining(
-                  child: Center(
-                    child: Text(
-                      "Content not available yet for this Surah",
-                      style: GoogleFonts.poppins(fontSize: 18.sp, color: Colors.grey),
+      body: Stack(
+        children: [
+          Obx(() => CustomScrollView(
+                slivers: [
+                  _buildAppBar(),
+                  if (controller.isLoading.value)
+                    const SliverFillRemaining(
+                      child: Center(child: CircularProgressIndicator(color: AppColor.primary)),
+                    )
+                  else if (controller.ayahs.isEmpty)
+                    SliverFillRemaining(
+                      child: Center(
+                        child: Text(
+                          "Content not available yet for this Surah",
+                          style: GoogleFonts.poppins(fontSize: 18.sp, color: Colors.grey),
+                        ),
+                      ),
+                    )
+                  else
+                    SliverPadding(
+                      padding: EdgeInsets.only(bottom: 100.h),
+                      sliver: SliverList(
+                        delegate: SliverChildBuilderDelegate(
+                          (context, index) => _buildAyahItem(controller.ayahs[index], index),
+                          childCount: controller.ayahs.length,
+                        ),
+                      ),
                     ),
-                  ),
-                )
-              else
-                SliverList(
-                  delegate: SliverChildBuilderDelegate(
-                    (context, index) => _buildAyahItem(controller.ayahs[index], index),
-                    childCount: controller.ayahs.length,
-                  ),
-                ),
-            ],
-          )),
+                ],
+              )),
+          _buildBottomPlayer(),
+        ],
+      ),
     );
   }
 
@@ -142,96 +150,224 @@ class _SurahDetailScreenState extends State<SurahDetailScreen> {
   }
 
   Widget _buildAyahItem(Ayah ayah, int index) {
-    // Obx is not strictly necessary here because the parent is already an Obx
-    // but it helps if we want to be explicit about what updates.
-    // However, controller.ayahs.refresh() triggers the parent Obx.
     final bool isBookmarked = controller.isBookmarked(widget.surah.number, ayah.numberInSurah);
-    final bool isPlaying = controller.playingAyahIndex.value == index;
 
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-      decoration: BoxDecoration(
-        color: isPlaying ? AppColor.primary.withOpacity(0.05) : Colors.transparent,
-        border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+    return Obx(() {
+      final bool isCurrentAyah = controller.playingAyahIndex.value == index;
+      final bool isActuallyPlaying = isCurrentAyah && controller.isPlaying.value;
+
+      return Container(
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
+        decoration: BoxDecoration(
+          color: isCurrentAyah ? AppColor.primary.withOpacity(0.05) : Colors.transparent,
+          border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
+              decoration: BoxDecoration(
+                color: AppColor.primary.withOpacity(0.05),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 16.r,
+                    backgroundColor: AppColor.primary,
+                    child: Text(
+                      ayah.numberInSurah.toString(),
+                      style: GoogleFonts.poppins(fontSize: 12.sp, color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            20.height,
+            Text(
+              ayah.textArabic,
+              textAlign: TextAlign.right,
+              style: GoogleFonts.amiri(
+                fontSize: 30.sp,
+                fontWeight: FontWeight.bold,
+                color: AppColor.textBlack,
+                height: 2,
+              ),
+            ),
+            20.height,
+            Text(
+              ayah.textBangla,
+              style: GoogleFonts.hindSiliguri(
+                fontSize: 18.sp,
+                color: AppColor.textBlack,
+                height: 1.5,
+              ),
+            ),
+            12.height,
+            Text(
+              ayah.textEnglish,
+              style: GoogleFonts.poppins(
+                fontSize: 16.sp,
+                color: Colors.grey[600],
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
+        ),
+      );
+    });
+  }
+
+  Widget _buildBottomPlayer() {
+    return Obx(() {
+      if (controller.playingAyahIndex.value == null) return const SizedBox.shrink();
+
+      final ayah = controller.ayahs[controller.playingAyahIndex.value!];
+
+      return Positioned(
+        bottom: 20.h,
+        left: 20.w,
+        right: 20.w,
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.h),
+          decoration: BoxDecoration(
+            color: AppColor.primary,
+            borderRadius: BorderRadius.circular(20.r),
+            boxShadow: [
+              BoxShadow(
+                color: AppColor.primary.withOpacity(0.4),
+                blurRadius: 15,
+                offset: const Offset(0, 8),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              MusicVisualizer(isPlaying: controller.isPlaying.value),
+              15.width,
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Playing Ayah ${ayah.numberInSurah}",
+                      style: GoogleFonts.poppins(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.sp,
+                      ),
+                    ),
+                    Text(
+                      widget.surah.nameEnglish,
+                      style: GoogleFonts.poppins(
+                        color: Colors.white.withOpacity(0.9),
+                        fontSize: 12.sp,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              IconButton(
+                onPressed: () => controller.togglePlayPause(),
+                icon: Icon(
+                  controller.isPlaying.value ? Icons.pause_circle_filled : Icons.play_circle_filled,
+                  color: Colors.white,
+                  size: 35.r,
+                ),
+              ),
+              IconButton(
+                onPressed: () => controller.stopAudio(),
+                icon: const Icon(Icons.close, color: Colors.white, size: 24),
+              ),
+            ],
+          ),
+        ),
+      );
+    });
+  }
+}
+
+class MusicVisualizer extends StatelessWidget {
+  final bool isPlaying;
+  const MusicVisualizer({Key? key, required this.isPlaying}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 25.w,
+      height: 20.h,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: List.generate(
+            3, (index) => VisualizerBar(index: index, isPlaying: isPlaying)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
-            decoration: BoxDecoration(
-              color: AppColor.primary.withOpacity(0.05),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Row(
-              children: [
-                CircleAvatar(
-                  radius: 16.r,
-                  backgroundColor: AppColor.primary,
-                  child: Text(
-                    ayah.numberInSurah.toString(),
-                    style: GoogleFonts.poppins(fontSize: 12.sp, color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
-                ),
-                const Spacer(),
-                IconButton(
-                  onPressed: () => controller.copyAyah(ayah),
-                  icon: const Icon(Icons.copy_outlined, color: AppColor.primary, size: 20),
-                ),
-                IconButton(
-                  onPressed: () => controller.playAyah(index, widget.surah.number),
-                  icon: Icon(
-                    isPlaying ? Icons.pause_circle_outline : Icons.play_circle_outline,
-                    color: AppColor.primary,
-                    size: 24,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () => controller.toggleBookmark(
-                    widget.surah.number,
-                    widget.surah.nameEnglish,
-                    ayah.numberInSurah,
-                  ),
-                  icon: Icon(
-                    isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                    color: AppColor.primary,
-                    size: 20,
-                  ),
-                ),
-              ],
-            ),
+    );
+  }
+}
+
+class VisualizerBar extends StatefulWidget {
+  final int index;
+  final bool isPlaying;
+  const VisualizerBar({Key? key, required this.index, required this.isPlaying})
+      : super(key: key);
+
+  @override
+  State<VisualizerBar> createState() => _VisualizerBarState();
+}
+
+class _VisualizerBarState extends State<VisualizerBar>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+        duration: Duration(milliseconds: 400 + (widget.index * 150)),
+        vsync: this);
+    _animation = Tween<double>(begin: 2, end: 15).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    );
+    if (widget.isPlaying) {
+      _controller.repeat(reverse: true);
+    }
+  }
+
+  @override
+  void didUpdateWidget(VisualizerBar oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.isPlaying) {
+      if (!_controller.isAnimating) {
+        _controller.repeat(reverse: true);
+      }
+    } else {
+      _controller.stop();
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        return Container(
+          width: 3.w,
+          height: widget.isPlaying ? _animation.value.h : 5.h,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(5),
           ),
-          20.height,
-          Text(
-            ayah.textArabic,
-            textAlign: TextAlign.right,
-            style: GoogleFonts.amiri(
-              fontSize: 30.sp,
-              fontWeight: FontWeight.bold,
-              color: AppColor.textBlack,
-              height: 2,
-            ),
-          ),
-          20.height,
-          Text(
-            ayah.textBangla,
-            style: GoogleFonts.hindSiliguri(
-              fontSize: 18.sp,
-              color: AppColor.textBlack,
-              height: 1.5,
-            ),
-          ),
-          12.height,
-          Text(
-            ayah.textEnglish,
-            style: GoogleFonts.poppins(
-              fontSize: 16.sp,
-              color: Colors.grey[600],
-              fontStyle: FontStyle.italic,
-            ),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }

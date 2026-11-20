@@ -12,13 +12,19 @@ class SurahDetailsController extends GetxController {
   final RxBool isLoading = true.obs;
   final RxnInt playingAyahIndex = RxnInt();
   final AudioPlayer audioPlayer = AudioPlayer();
+  final RxBool isPlaying = false.obs;
+  final RxnInt currentSurahNumber = RxnInt();
 
   @override
   void onInit() {
     super.onInit();
+    // Listen for player state changes
     audioPlayer.playerStateStream.listen((state) {
+      isPlaying.value = state.playing;
+      
+      // Auto play next ayah when finished
       if (state.processingState == ProcessingState.completed) {
-        playingAyahIndex.value = null;
+        playNextAyah();
       }
     });
   }
@@ -55,11 +61,40 @@ class SurahDetailsController extends GetxController {
     }
   }
 
+  Future<void> playNextAyah() async {
+    if (playingAyahIndex.value != null && playingAyahIndex.value! < ayahs.length - 1) {
+      playAyah(playingAyahIndex.value! + 1, currentSurahNumber.value!);
+    } else {
+      playingAyahIndex.value = null;
+      isPlaying.value = false;
+    }
+  }
+
+  Future<void> stopAudio() async {
+    await audioPlayer.stop();
+    playingAyahIndex.value = null;
+    isPlaying.value = false;
+  }
+
+  Future<void> togglePlayPause() async {
+    if (audioPlayer.playing) {
+      await audioPlayer.pause();
+    } else {
+      await audioPlayer.play();
+    }
+  }
+
   Future<void> playAyah(int index, int surahNumber) async {
     try {
+      currentSurahNumber.value = surahNumber;
+      
       if (playingAyahIndex.value == index && audioPlayer.playing) {
         await audioPlayer.pause();
-        playingAyahIndex.value = null;
+        return;
+      }
+
+      if (playingAyahIndex.value == index && !audioPlayer.playing && audioPlayer.processingState != ProcessingState.idle) {
+        await audioPlayer.play();
         return;
       }
 
@@ -95,7 +130,7 @@ class SurahDetailsController extends GetxController {
         timestamp: DateTime.now(),
       ));
     }
-    ayahs.refresh(); // To update the UI bookmark icon
+    ayahs.refresh();
   }
 
   bool isBookmarked(int surahNumber, int ayahNumber) {
